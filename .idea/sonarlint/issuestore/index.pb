@@ -3,12 +3,6 @@
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 h
 8src/main/java/org/kaleval/springMVC/HelloController.java,4\f\4fcffe0d7465856e9ffd2fda2aa27eb338701175
-^
-.src/main/webapp/WEB-INF/views/hello_world.html,0\8\08e27856f468281d1535d522c7eea892fa5f1526
-a
-1src/main/webapp/WEB-INF/applicationContextMVC.xml,6\c\6c2f962d9aebdca1c44ecb12d37e322f6b2c79d4
-O
-src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
 I
 src/main/webapp/index.jsp,8\e\8e6d3b70c9f5b02570779b0441540d45eceb0ded
 :
@@ -38,3 +32,7 @@ X
 (target/springMVCproject1/WEB-INF/web.xml,e\5\e5d5acffe3536ea05cc74308e44038ba5957ca05
 R
 "target/springMVCproject1/index.jsp,a\d\adf16d0e96c2e492640353832e5677d02f20456b
+†
+Vsrc/main/java/org/kaleval/springMVC/config/MySpringMvcDispetcherServltInitializer.java,1\9\194330cd5fe2f91afbf9b06d76da1cdada7e600a
+l
+<src/main/java/org/kaleval/springMVC/config/SpringConfig.java,1\7\17b78a7a517678a29171dc8bb3e2e370e00b3f60

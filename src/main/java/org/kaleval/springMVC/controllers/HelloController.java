@@ -1,4 +1,4 @@
-package org.kaleval.springMVC;
+package org.kaleval.springMVC.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,7 +8,6 @@ public class HelloController {
 
     @GetMapping("/hello-world")
     public String sayHello() {
-        return "hello_world";
+        return "/WEB-INF/hello_world.html";
     }
-
 }

@@ -7,7 +7,8 @@ public class MySpringMvcDispetcherServltInitializer  extends AbstractAnnotationC
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[0];
+        return null;
+//        return new Class[0];
     }
 
     @Override
