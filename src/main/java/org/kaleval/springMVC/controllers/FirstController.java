@@ -18,9 +18,6 @@ public class FirstController {
                             @RequestParam(value = "surname", required = false) String surname,
                             Model model) {
 
-
-//        System.out.println("Hello, " + name + " " + surname);
-
         model.addAttribute("message", "hello, " +name+" "+surname);
 
         return "first/hello";
@@ -29,5 +26,30 @@ public class FirstController {
     @GetMapping("/goodbye")
     public String goodByePage() {
         return "first/goodbye";
+    }
+
+    @GetMapping("/calculator")
+    public String calculator(@RequestParam("a") int a, @RequestParam("b") int b,
+                             @RequestParam("action") String action, Model model) {
+
+        double result;
+        switch (action) {
+            case "multiplication":
+                result = a * b;
+                break;
+            case "division":
+                result = a / (double) b;
+                break;
+            case "subtraction":
+                result = a - b;
+                break;
+            case "addition":
+                result = a + b;
+                break;
+            default:
+                result=0;
+        }
+        model.addAttribute("result", result);
+        return "first/calculator";
     }
 }
