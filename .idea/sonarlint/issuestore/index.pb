@@ -1,8 +1,6 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-h
-8src/main/java/org/kaleval/springMVC/HelloController.java,4\f\4fcffe0d7465856e9ffd2fda2aa27eb338701175
 I
 src/main/webapp/index.jsp,8\e\8e6d3b70c9f5b02570779b0441540d45eceb0ded
 :
@@ -10,12 +8,6 @@ I
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 w
 G.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,8\6\863e0292fd7e9b3e74dafd6cc01f73ba76346482
-w
-G.idea/sonarlint/issuestore/0/8/08e27856f468281d1535d522c7eea892fa5f1526,a\8\a8089aced069340ec9b5d6c3b1b873b8fb0b895e
-w
-G.idea/sonarlint/issuestore/2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392,1\8\188792529ee886cbdc6616248007f7a96c73e03d
-w
-G.idea/sonarlint/issuestore/6/c/6c2f962d9aebdca1c44ecb12d37e322f6b2c79d4,4\9\498a5555b54e41680e86acc9a6af717238043926
 w
 G.idea/sonarlint/issuestore/8/6/863e0292fd7e9b3e74dafd6cc01f73ba76346482,3\0\30f9777ea696a18aa49d3e9967e93a4276065227
 w
@@ -36,3 +28,19 @@ R
 Vsrc/main/java/org/kaleval/springMVC/config/MySpringMvcDispetcherServltInitializer.java,1\9\194330cd5fe2f91afbf9b06d76da1cdada7e600a
 l
 <src/main/java/org/kaleval/springMVC/config/SpringConfig.java,1\7\17b78a7a517678a29171dc8bb3e2e370e00b3f60
+^
+.src/main/webapp/WEB-INF/views/second/exit.html,8\6\86c85c7f48399a46de70bd7f0021446be98f0b76
+P
+ src/main/webapp/hello_world.html,e\7\e7456fe723296d79e07a7def640fd59dc6758ae1
+w
+G.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0,f\0\f0e0f9cec86fe4b939ae22be5264c758801eb28f
+t
+Dsrc/main/java/org/kaleval/springMVC/controllers/HelloController.java,4\2\42861b252ef9970c4bb47bf63a0bf61f2021d44b
+^
+.src/main/webapp/WEB-INF/views/first/hello.html,5\3\538dc38d9042c849acc4242af9a059216940f90c
+`
+0src/main/webapp/WEB-INF/views/first/goodbye.html,d\5\d51ab06dbc702eb933e6f2c243d26c647892e7d8
+t
+Dsrc/main/java/org/kaleval/springMVC/controllers/FirstController.java,3\4\347800d60dd77417713ba4c41f9f73d02a7643bd
+c
+3src/main/webapp/WEB-INF/views/first/calculator.html,2\5\2510e27ebdca54e7cf7748d62d81cb4db8f43eb5
