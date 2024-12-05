@@ -1,12 +1,11 @@
 package org.kaleval.springMVC.controllers;
 
 import org.kaleval.springMVC.dao.PersonDAO;
+import org.kaleval.springMVC.models.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/people")
@@ -14,17 +13,20 @@ public class PeopleControllre {
 
     private PersonDAO personDAO;
 
-    /**
-     * способ создания конструктора лучше чем писать @Autowired
-     */
     @Autowired
     public PeopleControllre(PersonDAO personDAO) {
         this.personDAO = personDAO;
     }
-@GetMapping()
-    public String index(Model model) {
-//        Получим всех людей из DAO и передадим на отображеие в представлене
-        model.addAttribute("people", personDAO.index());
+
+    //@GetMapping()
+//    public String index(Model model) {
+////        Получим всех людей из DAO и передадим на отображеие в представлене
+//        model.addAttribute("people", personDAO.index());
+//        return "people/index";
+//    }
+
+    @GetMapping()
+    public String index(@ModelAttribute("person") Person person) {
         return "people/index";
     }
 
@@ -33,5 +35,16 @@ public class PeopleControllre {
 //        Получим одного человека по id из DAO и передадим на отображение в представление
         model.addAttribute("person", personDAO.show(id));
         return "people/show";
+    }
+
+    @GetMapping("/new")
+    public String newPerson(@ModelAttribute("person") Person person) {
+        return "people/new";
+    }
+
+    @PostMapping()
+    public String create(@ModelAttribute("person") Person person) {
+        personDAO.save(person);
+        return "redirect:/people";
     }
 }
