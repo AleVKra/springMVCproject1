@@ -1,8 +1,6 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-I
-src/main/webapp/index.jsp,8\e\8e6d3b70c9f5b02570779b0441540d45eceb0ded
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
@@ -24,8 +22,6 @@ l
 <src/main/java/org/kaleval/springMVC/config/SpringConfig.java,1\7\17b78a7a517678a29171dc8bb3e2e370e00b3f60
 w
 G.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0,f\0\f0e0f9cec86fe4b939ae22be5264c758801eb28f
-u
-Esrc/main/java/org/kaleval/springMVC/controllers/PeopleControllre.java,9\3\93574064e4286dc68bf551056db0bbb89ee86435
 f
 6src/main/java/org/kaleval/springMVC/dao/PersonDAO.java,0\7\072b3916d455e50c36244eea3c0b06148d2db9bb
 f
