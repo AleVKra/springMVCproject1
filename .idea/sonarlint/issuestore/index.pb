@@ -16,12 +16,6 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 ]
 -target/springMVCproject1/META-INF/MANIFEST.MF,e\0\e02328ace7fb80e9fdadae615cd83a87d2994456
-g
-7target/springMVCproject1/WEB-INF/views/hello_world.html,e\d\ed21273fba79ceb1d1f9c62d7acef3ff48f7c9e1
-j
-:target/springMVCproject1/WEB-INF/applicationContextMVC.xml,5\7\57f60f520e0aab2638af90089d005ec979ecc9d1
-X
-(target/springMVCproject1/WEB-INF/web.xml,e\5\e5d5acffe3536ea05cc74308e44038ba5957ca05
 R
 "target/springMVCproject1/index.jsp,a\d\adf16d0e96c2e492640353832e5677d02f20456b
 †
@@ -56,3 +50,5 @@ w
 G.idea/sonarlint/issuestore/f/0/f0e0f9cec86fe4b939ae22be5264c758801eb28f,5\0\50e216b4439d2538168c3ddca9c0c2fe23bd1c02
 ]
 -src/main/webapp/WEB-INF/views/people/new.html,9\7\97c3b486fa9c121f92d9aff1f5f3e8b144c7451f
+^
+.src/main/webapp/WEB-INF/views/people/edit.html,6\5\65684609741f2fbbbec8a75635079c03817e4212

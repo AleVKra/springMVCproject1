@@ -15,10 +15,10 @@ public class PersonDAO {
     {
         people = new ArrayList<>();
 
-        people.add(new Person(++PEOPLE_COUNT, "Tom"));
-        people.add(new Person(++PEOPLE_COUNT, "Bob"));
-        people.add(new Person(++PEOPLE_COUNT, "Kat"));
-        people.add(new Person(++PEOPLE_COUNT, "Mat"));
+        people.add(new Person(++PEOPLE_COUNT, "Tom", 24, "tomCruze@oddg.com"));
+        people.add(new Person(++PEOPLE_COUNT, "Bob",  25, "bobCruze@ofgh.ru"));
+        people.add(new Person(++PEOPLE_COUNT, "Kat", 29, "katCruze@oddg.dg"));
+        people.add(new Person(++PEOPLE_COUNT, "Mat", 35, "matCruze@oddg.com"));
 
     }
 
