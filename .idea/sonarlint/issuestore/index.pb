@@ -42,3 +42,7 @@ G.idea/sonarlint/issuestore/f/0/f0e0f9cec86fe4b939ae22be5264c758801eb28f,5\0\50
 -src/main/webapp/WEB-INF/views/people/new.html,9\7\97c3b486fa9c121f92d9aff1f5f3e8b144c7451f
 ^
 .src/main/webapp/WEB-INF/views/people/edit.html,6\5\65684609741f2fbbbec8a75635079c03817e4212
+j
+:src/main/java/org/kaleval/springMVC/dao/sqlQuery/sql_query,7\2\725a07c34a5a2a54a266994e40ad38eff455cbe2
+l
+<src/main/java/org/kaleval/springMVC/dao/PersonRowMapper.java,f\1\f1d9b5f44beeda062fadcad8b77c56c7322708cc

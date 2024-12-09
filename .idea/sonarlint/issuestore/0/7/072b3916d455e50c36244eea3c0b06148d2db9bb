@@ -1,0 +1,7 @@
+
+w
+java:S3008"WRename this field "PEOPLE_COUNT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®×ÁÍúÿÿÿÿ8çáç¹º2
+P
+java:S1068"0Remove this unused "PEOPLE_COUNT" private field.(®×ÁÍúÿÿÿÿ8çáç¹º2
+[	java:S125"<This block of commented-out lines of code should be removed.(ÒÜÓøýÿÿÿÿ8çáç¹º2
+r	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ýø…™øÿÿÿÿ
