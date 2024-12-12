@@ -66,3 +66,9 @@ w
 G.idea/sonarlint/issuestore/b/7/b74e8c230459235775e2f7c88126ddb0ac14fa2d,f\b\fb161f50f4ccaeff05773bcbbd14483b77364e1c
 ]
 -src/main/resources/database.properties.origin,c\1\c18108f379eadc92214faac1c1b6f3353d4ea945
+t
+Dsrc/main/java/org/kaleval/springMVC/controllers/BatchController.java,9\2\924fb31d8b02524c5db747d5ff8290c638036002
+u
+Esrc/main/java/org/kaleval/springMVC/controllers/PeopleController.java,9\6\96778b596429839373ccb86297324a389104b431
+^
+.src/main/webapp/WEB-INF/views/batch/index.html,3\3\330a9665a79737771a10691c733ab1bf404363be

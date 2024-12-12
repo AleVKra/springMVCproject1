@@ -10,6 +10,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class PersonDAO {
@@ -20,8 +21,6 @@ public class PersonDAO {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    // автоматическое заполнение id
-    private static int PEOPLE_COUNT;
 
     public List<Person> index() {
 //        return jdbcTemplate.query("SELECT*FROM Person", new PersonRowMapper());
@@ -33,8 +32,19 @@ public class PersonDAO {
                 .stream().findAny().orElse(null);
     }
 
+//    public Person show(String email){
+//        return jdbcTemplate.query("SELECT * FROM Person WHERE email=?",
+//                new Object[]{email}, new BeanPropertyRowMapper<>(Person.class)).stream()
+//                .findAny().orElse(null);
+//    }
+    /**альтернатива метода public Person show(String email) с 8ой джавы*/
+    public Optional<Person> show(String email) {
+        return jdbcTemplate.query("SELECT * FROM Person WHERE email=?",
+                        new Object[]{email}, new BeanPropertyRowMapper<>(Person.class)).stream()
+                .findAny();
+    }
     public void save(Person person) {
-        jdbcTemplate.update("INSERT INTO Person VALUES(1, ?, ?, ?)", person.getName(), person.getAge(),
+        jdbcTemplate.update("INSERT INTO Person(name, age, email) VALUES(?, ?, ?)", person.getName(), person.getAge(),
                 person.getEmail());
     }
 
