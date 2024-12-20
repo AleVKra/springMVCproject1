@@ -1,4 +1,4 @@
-package org.kaleval.springMVC.config;
+package org.kaleval.spring_MVC.config;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ import javax.sql.DataSource;
 import java.util.Objects;
 
 @Configuration
-@ComponentScan("org.kaleval.springMVC")
+@ComponentScan("org.kaleval.spring_MVC")
 @EnableWebMvc
 @PropertySource("classpath:database.properties")
 public class SpringConfig implements WebMvcConfigurer {
@@ -41,6 +41,7 @@ public class SpringConfig implements WebMvcConfigurer {
         templateResolver.setApplicationContext(applicationContext);
         templateResolver.setPrefix("/WEB-INF/views/");
         templateResolver.setSuffix(".html");
+        templateResolver.setCharacterEncoding("UTF-8");
         return templateResolver;
     }
 
@@ -49,6 +50,7 @@ public class SpringConfig implements WebMvcConfigurer {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver());
         templateEngine.setEnableSpringELCompiler(true);
+
         return templateEngine;
     }
 
@@ -56,6 +58,8 @@ public class SpringConfig implements WebMvcConfigurer {
     public void configureViewResolvers(ViewResolverRegistry registry) {
         ThymeleafViewResolver resolver = new ThymeleafViewResolver();
         resolver.setTemplateEngine(templateEngine());
+        resolver.setCharacterEncoding("UTF-8");
+
         registry.viewResolver(resolver);
     }
 

@@ -1,9 +1,0 @@
-
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ýø…™øÿÿÿÿ
-]	java:S125"<This block of commented-out lines of code should be removed.(ÒÜÓøýÿÿÿÿ8çáç¹º2
-U	java:S106?"9Replace this use of System.out or System.err by a logger.(Æ‡…¬8ïœá‹»2
-U	java:S106]"9Replace this use of System.out or System.err by a logger.(÷ç¦„8ïœá‹»2
-R
-java:S1068"0Remove this unused "PEOPLE_COUNT" private field.(®×ÁÍúÿÿÿÿ8çáç¹º2
-y
-java:S3008"WRename this field "PEOPLE_COUNT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®×ÁÍúÿÿÿÿ8çáç¹º2

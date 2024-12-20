@@ -1,10 +1,10 @@
-package org.kaleval.springMVC.controllers;
+package org.kaleval.spring_MVC.controllers;
 
 import javax.validation.Valid;
 
-import org.kaleval.springMVC.dao.PersonDAO;
-import org.kaleval.springMVC.models.Person;
-import org.kaleval.springMVC.util.PersonValidator;
+import org.kaleval.spring_MVC.dao.PersonDAO;
+import org.kaleval.spring_MVC.models.Person;
+import org.kaleval.spring_MVC.util.PersonValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,6 +17,7 @@ public class PeopleController {
 
     private final PersonDAO personDAO;
     private final PersonValidator personValidator;
+
     @Autowired
     public PeopleController(PersonDAO personDAO, PersonValidator personValidator) {
         this.personDAO = personDAO;
@@ -32,7 +33,14 @@ public class PeopleController {
     @GetMapping("/{id}")
     public String show(@PathVariable("id") int id, Model model) {
         model.addAttribute("person", personDAO.show(id));
+        model.addAttribute("books", personDAO.getBookByPersonId(id));
         return "people/show";
+    }
+
+    @GetMapping("/new")
+    public String newPerson(@ModelAttribute("person") Person person) {
+
+        return "people/new";
     }
 
     @PostMapping()
@@ -71,5 +79,4 @@ public class PeopleController {
         personDAO.delete(id);
         return "redirect:/people";
     }
-
 }

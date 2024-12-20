@@ -9,6 +9,7 @@
         <module name="springMVCproject1" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="17" />
   </component>
   <component name="TypeScriptCompiler">
     <option name="recompileOnChanges" value="true" />
